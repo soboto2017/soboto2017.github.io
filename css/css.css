@@ -107,7 +107,7 @@ body{
 
 /*H5灏忓簲鐢�*/
 .hxyy{width: 640px;height: auto;margin: 0 auto;}
-.hxyy .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/hxyy.jpg)no-repeat;background-size: 100% auto;}
+.hxyy .banner{width: 640px;height: 118px;background: url(../img/shouji.jpg)no-repeat;background-size: 100% auto;}
 .hxyy .introduce{width: 100%;height: 160px;margin-top: 10px;}
 .hxyy .leibie{display: block;width: 88px;height: 88px;margin-top: 20px;float: left;margin-left: 45px;}
 .hxyy .jieshao{display: block;width: 450px;height: 150px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}

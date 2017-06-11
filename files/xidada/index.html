@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" manifest="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>来电H5</title>
+    <meta name="keywords" content="来电H5" />
+    <meta name="description" content="来电H5" />
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="bookmark" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/xidada.css">
+</head>
+
+<body>
+    <div style="display:none">
+      <img src="./images/share.jpg">
+    </div>
+    <div id="webContent">
+        <div class="loading">
+            <img src="./images/loading.gif">
+        </div>
+        <div class="container">
+
+          <div class="item item1 itema" id="item11">
+            <div class="photo-xjp">
+              <img src="images/lee.jpg">
+              <h1>习近平总书记</h1>
+              <p>通过人民日报微博微信客户端<br>给您发来了元宵节祝福...</p>
+            </div>
+
+
+            <div class="answer">
+              <div class="answer-a">
+                <img src="images/icon_th.png" class="icon-green">
+                <img src="images/icon_gd.png" class="icon-red"></div>
+              <div class="tip_warp replay_show" id="tip_warp">
+                <span class="time" id="palytime">00:<i>00</i></span>
+                <span class="answer-text">接听</span>
+                <span class="replay_tip">回电</span>
+                <span class="share_tip">分享给朋友</span>
+              </div>
+
+            <div class="swicth-div">
+            <ul class="swicth_btns animated">
+              <li id="btn_text1">
+                <span>
+                  <img src="images/btn_sp.png">
+                  <p>文本</p>
+                </span>
+              </li>
+              <li id="btn_text2">
+                <span id="btn_img">
+                  <img src="images/btn_phpto.png">图集</span>
+              </li>
+              <li>
+                <span id="replay">
+                  <img src="images/btn_ct.png">重听</span>
+              </li>
+            </ul>
+            </div>
+            </div>
+
+            <!-- 文本 -->
+            <div class="mask mask1">
+              <div class="banner_warp">
+                  <span class="img_warp close">
+                    <img src="images/close.png">
+                  </span>
+              </div>
+            </div>
+            <!-- 图集 -->
+            <div class="mask mask2">
+              <div class="banner_warp">
+                  <span class="img_warp close">
+                    <img src="images/close.png">
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <audio id="musicfx1" loop="false">
+            <source type="audio/mpeg" id="music1" src="images/wiht.mp3">
+          </audio>
+          <audio id="musicfx2" loop="false">
+            <source type="audio/mpeg" id="music2" src="images/audio.mp3">
+          </audio>
+        </div>
+    </div>
+
+
+    <script src="http://www.eol.cn/js/common/jquery/2.0/jquery.js"></script>
+    <script src="./js/snabbt.min.js"></script>
+    <script>
+    $(window).load(function () {
+      // loading页面
+      $(".loading").hide();
+      $(".container").show();
+      // 开学畅想几个字浮出
+      $(".kaixue-word").addClass("show");
+      // 背景音乐
+      $('#musicfx1').get(0).play();
+      $('#musicfx2').get(0).pause();
+    });
+    </script>
+    <script>
+      // 禁止页面移动
+      var jinzhi=0;
+      document.addEventListener("touchmove",function(e){
+        if(jinzhi==0){
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      },false);
+
+    </script>
+
+
+  <script type="text/javascript">
+    $('#btn_text1').on('click',function(){
+      $('.mask1').css('display','block');
+    });
+    $('#btn_text2').on('click',function(){
+      $('.mask2').css('display','block');
+    });
+    var tink = 0;
+    var repeat_tink = true;
+    var num = 0;
+    var time_page = 0;
+    $('.icon-green').on('click',function(){
+      var myVid=document.getElementById("musicfx2");
+      var music_time = myVid.duration;//设置你要倒计时间
+      var myVid1=document.getElementById("musicfx1");
+      var didi_time = myVid1.duration;
+      myVid.loop = false;
+      myVid1.loop = false;
+      function zhongshan(n){
+        return n<10?'0'+n:n;
+      }
+      time_page = zhongshan(parseInt(time_page));
+
+
+
+      if(tink == 0){
+        var time1 = setInterval(function(){
+            num ++;
+            time_page = zhongshan(num);
+            $("#palytime i").html(time_page);
+            myVid.addEventListener('ended', function () {
+              $('#musicfx2').get(0).pause();
+              $('.icon-red').css('display','none');
+              $('.icon-green').css('display','block');
+              $('.time').css('display','none');
+              $('.replay_tip').css('display','block');
+              $('.swicth-div').css('display','block');
+              num = 0;
+            }, false);
+
+         },1000)
+        $('#musicfx1').get(0).pause();
+        $('#musicfx2').get(0).play();
+
+        $('.icon-red').css('display','block');
+        $('.icon-green').css('display','none');
+        $('.answer-text').css('display','none');
+        $('.time').css('display','block');
+
+        tink = 1;
+      }else if(tink == 1 && repeat_tink == true){
+        var myVid1=document.getElementById("musicfx1");
+        var didi_time = myVid1.duration;
+         $('.icon-red').css('display','block');
+         $('.icon-green').css('display','none');
+         $('#musicfx1').get(0).currentTime = 0;
+          $('#musicfx1').get(0).play();
+          $('#musicfx2').get(0).pause();
+          repeat_tink = false;
+          myVid1.addEventListener('ended', function () {
+            num =0;
+            $('#musicfx1').get(0).currentTime = 0;
+            $('#musicfx1').get(0).pause();
+            $('#musicfx2').get(0).currentTime = 0;
+            $('#musicfx2').get(0).play();
+            setTimeout(function(){
+              $(".replay_tip").hide();
+              $("#palytime").css("display","block");
+            },1000)
+
+            repeat_tink = true;
+          }, false);
+
+      }
+
+      $('#replay').on('click',function(){
+        num = 0;
+         $('.icon-red').css('display','block');
+         $('.icon-green').css('display','none');
+            $('#musicfx1').get(0).currentTime = 0;
+            $('#musicfx1').get(0).pause();
+            $('#musicfx2').get(0).currentTime = 0;
+            $('#musicfx2').get(0).play();
+            $(".replay_tip").hide();
+            $("#palytime").css("display","block");
+      });
+
+    });
+    $('.close').on('click',function(){
+      $('.mask').css('display','none');
+    });
+
+
+    $('.icon-red').on('click',function(){
+      if(repeat_tink == true){
+        $('#musicfx2').get(0).pause();
+        $('#musicfx2').get(0).currentTime = 0;
+        $('.icon-red').css('display','none');
+        $('.icon-green').css('display','block');
+        $('.time').css('display','none');
+        $('.replay_tip').css('display','block');
+        $('.swicth-div').css('display','block');
+        $('.swicth_btns').addClass('fadeTop-animate');
+      }
+
+    });
+
+
+
+  </script>
+
+
+
+  <!-- 统计代码 -->
+  <script>
+  (function(){
+   var _doc=document.getElementsByTagName('body')[0];
+   var script=document.createElement('script');
+   script.setAttribute('type','text/javascript');
+   script.setAttribute('src','http://stat.eol.cn/piwik.js');
+   _doc.appendChild(script);
+   function create(){
+     try {
+       var piwikTracker = Piwik.getTracker("http://stat.eol.cn/mysql.php", 137);
+       piwikTracker.trackPageView();
+       piwikTracker.enableLinkTracking();
+     } catch( err ) {}
+   }
+   if(document.all){
+     script.onreadystatechange=create;
+   }else{
+   script.onload=create;
+   }
+  })();
+  </script>
+
+</body>
+
+</html>
