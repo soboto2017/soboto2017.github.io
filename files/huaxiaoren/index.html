@@ -253,35 +253,7 @@
 
     </script>
     <script src="./js/all.js"></script>
-    <!--  微信分享定制-->
-    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-    <script>
-    /**
-     * 分享到朋友圈
-     *
-     * @param {String} imgUrl 图片url
-     * @param {String} link 链接
-     * @param {String} title 标题
-     * @param {String} desc 文本内容
-     */
-    function share ( imgUrl, link, title, desc ) {
-        weiXin.ready(function () {
-            WeixinJSBridge.on('menu:share:timeline', function () {
-                WeixinJSBridge.invoke('shareTimeline', {
-                    "img_url": imgUrl,
-                    "img_width": "300",
-                    "img_height": "300",
-                    "link": link,
-                    "title": title,
-                    "desc": desc
-                }, function( res ) {
-                    _report('share', res.err_msg);
-                });
-            });
-        });
-    }
-    weiXin.share('http://www.lee-my.com/h5demo01/images/share.jpg', 'http://www.lee-my.com/h5demo01/', '动动手指，画小人，蹦蹦哒哒去大学', '开学畅想记');
-    </script>
+
 
 
 </body>
