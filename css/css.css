@@ -26,7 +26,7 @@ body{
 .main li img{display: block;width: 146px;height:88px;margin-top: 10px;}
 .main li a{display: block;width: 146px;height:128px;position: absolute;top: 0;color: #FFFFFF;text-align: center;text-decoration: none;font-size: 20px;line-height: 200px;}
 
-.logo{width: 410px;height: 96px;position: absolute;bottom: 14.2%;left:18.8%;background: url(http://www.eol.cn/html/uc/2017cases/img/logo.png)no-repeat;background-size:100% auto ;}
+.logo{width: 72%;height: 96px;position: absolute;bottom: 12.5%;left:0;right: 0;margin: auto;background: url(../img/logo.png)no-repeat;background-size:100% auto ;}
 .anli{width: 248px;height: 63px;display: block;position: absolute;bottom: 6.3%;left: 18.8%;}
 .col{width: 160px;height: 63px;display: block;position: absolute;bottom: 6.3%;right: 17.7%;}
 
@@ -35,7 +35,7 @@ body{
 .back{width: 100%;height: 53px;margin-top:20px ;}
 .back img{width: 35px;height: 53px;float: right;margin-right:45px ;}
 .sj .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/shouji.jpg)no-repeat;background-size: 100% auto;}
-.bottom{width: 640px;height: 61px;background: url(http://www.eol.cn/html/uc/2017cases/img/bottom.jpg)no-repeat;background-size: 100% auto;margin-top: 20px;}
+.bottom{width: 640px;height: 61px;background: url(../img/bottom.png)no-repeat;background-size: 100% auto;margin-top: 20px;}
 .fl{width: 640px;height: 51px;background: url(http://www.eol.cn/html/uc/2017cases/img/fl.png)no-repeat center;margin-top: 20px;margin-bottom: 10px;}
 .fl h2{display: block;width: 200px;height: 50px;font-size: 26px;line-height: 50px;color: #bf0303;text-align: center;margin: 0 auto;margin-top: 20px;margin-bottom: 10px;}
 .sj .introduce{width: 100%;height: 130px;margin-top: 10px;}
