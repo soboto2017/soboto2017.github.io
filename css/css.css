@@ -13,13 +13,13 @@ ul, ol ,li{
 }
 html,body{
   height: 100%;
-  font-family: "微软雅黑";
+  font-family: "寰蒋闆呴粦";
 }
 body{
 	position: relative;
 }
-/*首页*/
-.bd{width: 640px;height:100%;margin:0 auto;overflow: hidden;background: url(http://www.eol.cn/html/uc/2017cases/img/bg.jpg)no-repeat;background-size:100% 100%;z-index: 999;position:relative}    
+/*棣栭〉*/
+.bd{width: 640px;height:100%;margin:0 auto;overflow: hidden;background: url(http://www.eol.cn/html/uc/2017cases/img/bg.jpg)no-repeat;background-size:100% 100%;z-index: 999;position:relative}
 .main{display: block;width: 490px;height: 286px;position: absolute;top: 55px;left:55px;z-index: 1000;}
 .main ul{display: block;width: 490px;height: 130px;margin-bottom: 16px;}
 .main ul li{display: block;width: 144px;height: 128px;border: 1px solid #FFFFFF;border-radius: 5%;float: left;margin-right: 16px;background: #bd3333;position: relative;color: #FFFFFF;text-align: center;font-size: 18px;}
@@ -30,7 +30,7 @@ body{
 .anli{width: 248px;height: 63px;display: block;position: absolute;bottom: 6.3%;left: 18.8%;}
 .col{width: 160px;height: 63px;display: block;position: absolute;bottom: 6.3%;right: 17.7%;}
 
-/*手机网站*/
+/*鎵嬫満缃戠珯*/
 .sj{width: 640px;height: auto;margin: 0 auto}
 .back{width: 100%;height: 53px;margin-top:20px ;}
 .back img{width: 35px;height: 53px;float: right;margin-right:45px ;}
@@ -50,35 +50,35 @@ body{
 .demo img{display: block;width: 100px;height: 40px;position: absolute;top:8px;right: 15px;}
 .demo a{display: block;width: 550px;height: 58px;position: absolute;top: 0px;right: 0px;color: #BF0303;text-decoration: none;font-size: 24px;line-height: 58px;font-weight: bold;padding-left: 8px;text-indent: 1em;}
 
-/*720全景*/
+/*720鍏ㄦ櫙*/
 .qj{width: 640px;height: auto;margin: 0 auto;}
 .qj .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/quanjing.jpg)no-repeat;background-size: 100% auto;}
 .qj .introduce{width: 100%;height: 190px;margin-top: 10px;}
 .qj .leibie{display: block;width: 88px;height: 88px;margin-top: 20px;float: left;margin-left: 45px;}
 .qj .jieshao{display: block;width: 450px;height: 170px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}
 .qj .demo{width: 100%;height: auto;margin-top:10px;}
-/*薅羊毛*/
+/*钖呯緤姣�*/
 .hym{width: 640px;height: auto;margin: 0 auto;}
 .hym .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/yang.jpg)no-repeat;background-size: 100% auto;}
 .hym .introduce{width: 100%;height: 190px;margin-top: 10px;}
 .hym .leibie{display: block;width: 88px;height: 88px;margin-top: 20px;float: left;margin-left: 45px;}
 .hym .jieshao{display: block;width: 450px;height: 180px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}
 .hym .demo{width: 100%;height: auto;margin-top: 10px;}
-/*视频访谈*/
+/*瑙嗛璁胯皥*/
 .ft{width: 640px;height: auto;margin: 0 auto;}
 .ft .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/shipin.jpg)no-repeat;background-size: 100% auto;}
 .ft .introduce{width: 100%;height: 190px;margin-top: 10px;}
 .ft .leibie{display: block;width: 88px;height: 88px;margin-top: 20px;float: left;margin-left: 45px;}
 .ft .jieshao{display: block;width: 450px;height: 170px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}
 .ft .demo{width: 100%;height: auto;margin-top: 10px;}
-/*掌上校园*/
+/*鎺屼笂鏍″洯*/
 .zsxy{width: 640px;height: auto;margin: 0 auto;}
 .zsxy .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/zhangshang.jpg)no-repeat;background-size: 100% auto;}
 .zsxy .introduce{width: 100%;height: 150px;margin-top: 10px;}
 .zsxy .leibie{display: block;width: 88px;height: 88px;margin-top: 20px;float: left;margin-left: 45px;}
 .zsxy .jieshao{display: block;width: 450px;height: 150px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}
 .zsxy .demo{width: 100%;height: auto;margin-top: 10px;}
-/*搜索排名*/
+/*鎼滅储鎺掑悕*/
 .sspm{width: 640px;height: auto;margin: 0 auto;}
 .sspm .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/shousuo.jpg)no-repeat;background-size: 100% auto;}
 .sspm .introduce{width: 100%;height: 220px;margin-top: 10px;}
@@ -88,7 +88,7 @@ body{
 .tupian{width: 100%;height: 190px;}
 .tupian img{width: 310px;height: auto;margin: 0 5px;float: left;}
 
-/*航拍视频*/
+/*鑸媿瑙嗛*/
 .hpsp{width: 640px;height: auto;margin: 0 auto;}
 .hpsp .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/hangpai.jpg)no-repeat;background-size: 100% auto;}
 .hpsp .introduce{width: 100%;height: 170px;margin-top: 10px;}
@@ -96,7 +96,7 @@ body{
 .hpsp .jieshao{display: block;width: 450px;height: 170px;font-size: 20px;line-height: 24px;text-align: justify;text-indent: 2em;float: right;margin-right: 45px;}
 .hpsp .demo{width: 100%;height: auto;margin-top: 10px;}
 
-/*其它视频案例*/
+/*鍏跺畠瑙嗛妗堜緥*/
 .qtspal{width: 640px;height: auto;margin: 0 auto;}
 .qtspal .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/qtspal.jpg)no-repeat;background-size: 100% auto;}
 .qtspal .introduce{width: 100%;height: 160px;margin-top: 10px;}
@@ -105,7 +105,7 @@ body{
 .qtspal .demo{width: 100%;height: auto;margin-top: 10px;}
 
 
-/*H5小应用*/
+/*H5灏忓簲鐢�*/
 .hxyy{width: 640px;height: auto;margin: 0 auto;}
 .hxyy .banner{width: 640px;height: 118px;background: url(http://www.eol.cn/html/uc/2017cases/img/hxyy.jpg)no-repeat;background-size: 100% auto;}
 .hxyy .introduce{width: 100%;height: 160px;margin-top: 10px;}
