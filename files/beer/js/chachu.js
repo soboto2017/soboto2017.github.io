@@ -4,7 +4,6 @@ $(function(){
   // 擦除完执行chachuIsFun
   var chachuIsFun;
   var set_chachu_value = function(_a,event){
-    alert(222)
       chachuIs = _a;
       if(event){
          event();
@@ -116,7 +115,7 @@ $(function(){
     // 虚拟data
     var data = {};
     var data = {
-          errcode: 20,
+          errcode: 0,
           datatype:2,
           name:'一等奖/奥林巴斯相机1台！',
           errmsg:''

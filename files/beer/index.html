@@ -221,13 +221,13 @@
   </script>
   <!-- 活动规则 -->
   <script>
-    $("body").on("tap",'.rule',function(){
+    $("body").on("touchstart",'.rule',function(){
       $(".diag-info").animate({top:0},444)
     })
-    $("body").on("tap",'.btn-back em',function(){
+    $("body").on("touchstart",'.btn-back em',function(){
       $(".diag-info").animate({top:"-100%"},300)
     })
-    $("body").on("tap",'.diag-prize .icon-delete',function(){
+    $("body").on("touchstart",'.diag-prize .icon-delete',function(){
       $(this).parent().parent().css("background","none").css("transition","0.5s all").fadeOut();
       $(this).parent().animate({marginTop:"-100%"},300)
       $("#cas").attr("touched","true");
