@@ -91,7 +91,7 @@
     </div>
 
 
-    <script  src="../js/jquery.js"></script>
+    <script  src="../js/jquery1.js"></script>
     <script src="./js/snabbt.min.js"></script>
     <script>
     $(window).load(function () {
@@ -231,28 +231,6 @@
 
 
 
-  <!-- 统计代码 -->
-  <script>
-  (function(){
-   var _doc=document.getElementsByTagName('body')[0];
-   var script=document.createElement('script');
-   script.setAttribute('type','text/javascript');
-   script.setAttribute('src','http://stat.eol.cn/piwik.js');
-   _doc.appendChild(script);
-   function create(){
-     try {
-       var piwikTracker = Piwik.getTracker("http://stat.eol.cn/mysql.php", 137);
-       piwikTracker.trackPageView();
-       piwikTracker.enableLinkTracking();
-     } catch( err ) {}
-   }
-   if(document.all){
-     script.onreadystatechange=create;
-   }else{
-   script.onload=create;
-   }
-  })();
-  </script>
 
 </body>
 
